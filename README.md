@@ -11,14 +11,17 @@ this Github repository.
 In the sample output shown the focus was on the
 `prod_stg_compsych_member_t` dataflow. The code in the
 Jupyter Notebook shows how using the Podium metadata
-repository that the ancestors of the dataflow can be
-determined from it's LOADERs. 
+repository, that the ancestors of the dataflow can be
+determined from it's LOADERs. The result is that we can 
+see the inputs and outputs of the dataflow back to - and
+including any intermediate dataflows - the Podium Source
+Entities that provide data to the in-focus dataflow.
 
 Possible uses for this information are:
 
 * documenting process flows
 * creating information for scheduling purposes
-* etc
+* etc.
 
 ![legend](./legend.svg)
 ![tree](./prod_stg_compsych_member_t.svg)
