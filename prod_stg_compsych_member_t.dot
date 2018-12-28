@@ -1,0 +1,28 @@
+strict digraph  {
+b_52599 [nid=52599, sname=prod_stg_Compsych_Member_T, label=prod_stg_Compsych_Member_T, n_type=bundle, shape=box, color=lightskyblue2];
+e_17738 [n_type=entity, nid=17738, snid=58, sname=stg_Compsych_Member_T, label=stg_Compsych_Member_T, shape=ellipse, color=lightgoldenrod1];
+s_58 [n_type=source, nid=58, sname=US_Derived, label=US_Derived, shape=octagon, color=palegreen2];
+b_54399 [nid=54399, sname=init_stg_Compsych_Member_T, label=init_stg_Compsych_Member_T, n_type=bundle, shape=box, color=lightskyblue2];
+e_18091 [n_type=entity, nid=18091, snid=58, sname=stg_compsych_sso_eligibility_t, label=stg_compsych_sso_eligibility_t, shape=ellipse, color=lightgoldenrod1];
+e_18266 [n_type=entity, nid=18266, snid=328, sname=compsych_sso_eligibility_t, label=compsych_sso_eligibility_t, shape=ellipse, color=lightgoldenrod1];
+s_328 [n_type=source, nid=328, sname=GWRRPT_PR, label=GWRRPT_PR, shape=octagon, color=palegreen2];
+b_52612 [nid=52612, sname=prod_copy_stg_compsych_sso_eligibility_t, label=prod_copy_stg_compsych_sso_eligibility_t, n_type=bundle, shape=box, color=lightskyblue2];
+b_52268 [nid=52268, sname=prod_stg_compsych_sso_eligibility_cdc_t, label=prod_stg_compsych_sso_eligibility_cdc_t, n_type=bundle, shape=box, color=lightskyblue2];
+e_18093 [n_type=entity, nid=18093, snid=58, sname=stg_compsych_sso_eligibility_temp_t, label=stg_compsych_sso_eligibility_temp_t, shape=ellipse, color=lightgoldenrod1];
+e_18066 [n_type=entity, nid=18066, snid=58, sname=full_stg_Compsych_Member_Audit_T, label=full_stg_Compsych_Member_Audit_T, shape=ellipse, color=lightgoldenrod1];
+b_52599 -> e_17738;
+s_58 -> e_17738  [color=cyan];
+s_58 -> e_18091  [color=cyan];
+s_58 -> e_18093  [color=cyan];
+s_58 -> e_18066  [color=cyan];
+b_54399 -> e_18091;
+e_18091 -> b_52268;
+e_18091 -> b_52599;
+e_18266 -> b_54399;
+e_18266 -> b_52268;
+s_328 -> e_18266  [color=cyan];
+b_52612 -> e_18091;
+b_52268 -> e_18093;
+b_52268 -> e_18066;
+e_18093 -> b_52612;
+}
