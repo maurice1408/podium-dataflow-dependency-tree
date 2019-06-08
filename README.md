@@ -23,5 +23,4 @@ Possible uses for this information are:
 * creating information for scheduling purposes
 * etc.
 
-![legend](./legend.svg)
 ![tree](./prod_stg_compsych_member_t.svg)
